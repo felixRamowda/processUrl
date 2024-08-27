@@ -1,7 +1,6 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ProcessUrlController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,4 +15,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
+
+Route::post('/processUrl' ,[ProcessUrlController::class, 'Url'])->name('process.url');
+
 

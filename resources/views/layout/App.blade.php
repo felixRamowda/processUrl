@@ -8,10 +8,9 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
-    
- <main>
-  <h1>Process URL</h1>
+ <main class="p-3">
+  <h1 class="font-extrabold text-3xl text-center">Process URL</h1>
    @yield('content')
   </main> 
 </body>
-</html>
+</html> 
